@@ -162,26 +162,26 @@ using markdown and github actions}
 \vskip 5em
 
 %
+\href{https://orcid.org/0000-0002-6506-6487}{Michael D.\,Catchen}%
+%
+\,\textsuperscript{1,2}\quad %
+\href{https://orcid.org/0000-0002-6004-4027}{Laura\,Pollock}%
+%
+\,\textsuperscript{1,2}\quad %
 \href{https://orcid.org/0000-0002-0735-5184}{Timothée\,Poisot}%
 %
-\,\textsuperscript{1,2,‡}\quad %
-Peregrin\,Took%
+\,\textsuperscript{3,2}\quad %
+\href{https://orcid.org/0000-0001-6075-8081}{Andrew\,Gonzalez}%
 %
-\,\textsuperscript{3,4}\quad %
-Merriadoc\,Brandybuck%
-%
-\,\textsuperscript{5,4,‡}
+\,\textsuperscript{1,2}
 
-\textsuperscript{1}\,Université de
-Montréal\quad \textsuperscript{2}\,Québec Centre for Biodiversity
-Sciences\quad \textsuperscript{3}\,Inn of the Prancing
-Pony\quad \textsuperscript{4}\,Fellowship of the
-Ring\quad \textsuperscript{5}\,Green Dragon Inn
+\textsuperscript{1}\,McGill University\quad \textsuperscript{2}\,Québec
+Centre for Biodiversity Sciences\quad \textsuperscript{3}\,Université de
+Montréal
 
-\textsuperscript{‡}\,These authors contributed equally to the work\\
 
 \textbf{Correspondance to:}\\
-Timothée Poisot --- \texttt{timothee.poisot@umontreal.ca}\\
+Michael D. Catchen --- \texttt{michael.catchen@mcgill.ca}\\
 
 \vfill
 This work is released by its authors under a CC-BY 4.0 license\hfill\ccby\\
@@ -193,14 +193,7 @@ Last revision: \emph{\today}
 \vfill
 
 
-        {\bfseries Purpose:}\,This template provides a series of scripts
-to render a markdown document into an interactive website and a series
-of PDFs.\\%
-        {\bfseries Motivation:}\,It makes collaborating on text with
-GitHub easier, and means that we never need to think about the
-output.\\%
-        {\bfseries Internals:}\,GitHub actions and a series of python
-scritpts. The markdown is handled with \texttt{pandoc}.\\%
+        {\bfseries Abstract:}\,TBD\\%
     
 \vfill
 
@@ -208,362 +201,160 @@ scritpts. The markdown is handled with \texttt{pandoc}.\\%
 \linenumbers
 \pagestyle{normal}
 
-This template uses \texttt{pandoc} (and a few additional python glue
-scripts) to facilitate the production of scientific articles using a
-standard markdown file. The objective is to ensure that standard
-markdown (with the important exception of the \texttt{pandoc-crossref}
-citation markup) will be rendered into an interactive website (which
-allows collaborative annotations with the \texttt{hypothes.is}
-platform), a ``draft'' style PDF (double-spaced, numbered lines, figures
-at the end), and a ``preprint'' style PDF (with slightly more
-reader-friendly pagination).
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
 
-The core bit of configuration is the \texttt{metadata.json} file, which
-handles information about authorship, affiliations, the abstract,
-keywords, etc. All documents will be deployed to \texttt{gh-pages}
-\emph{only} on push events from the \texttt{main} branch. All of the
-artifacts will be built when doing pull requests, so you can check that
-merging a branch is \emph{not} going to cause the compilation of the
-documents to fail; indeed, you can download the artifacts produced
-during the run, to check the PDF and html files. The website is only
-updated from the \texttt{main} branch.
+Earth's ecosystems are changing due to human activity.
 
-The workflow is \emph{very} GitHub based, and so the manuscript file
-\emph{is} the \texttt{README.md} - this is not going to be a huge issue
-as 90\% of the markdown is standard, with the exception of the citations
-and mathematics, so this will render (mostly) like a normal README file.
+However, we currently lack the data collected in a systematic way to
+adaquetly attribute change in biodiversity to particular drivers, and to
+filter out inherent temporal variation in ecological processes from
+deviations toward non-stationarity (TODO: wording)
+(\textbf{AndyDNAPaper?}).
 
-\hypertarget{deploying-the-template}{%
-\section{Deploying the template}\label{deploying-the-template}}
+Sampling is expensive.
 
-The process of deploying this template has been \emph{greatly}
-streamlined from previous versions:
+What is a BON? Talk about other important aspects of this framework. We
+want the data to be open. We want to encourage colloboration across
+scales. Not top-down.
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\hypertarget{combining-many-geospatial-layers-into-a-priority-map}{%
+\subsection{Combining many geospatial layers into a priority
+map}\label{combining-many-geospatial-layers-into-a-priority-map}}
+
+A set of geospatial layers, which potentially represent many different
+types of information. Here we consider each layer to fall into one of
+three categories: (1) ecological layers, which represent information
+about biological processes, e.g.~species richness, trend in abundance,
+uncertainty in species occurrence, etc. (2) environmental layers, which
+represent information about the abiotic environment, e.g.~climatic
+information, land-cover, elevation, climate velocity and uniqueness, and
+son. Finally, (3) cost layers: e.g.~the physical accessability of
+certain locations, the amount of money per unit of time spend sampling a
+given location, etc. We denote the value of an arbitrary layer \(L_i\)
+at the coordinate \((x,y)\) as \(L_i^{(x,y)}\). We also denoted a
+generic function \(g(L_i)\) where returns the group (ecological,
+environmental, cost) that the particular \(L_i\) belongs to. We also
+define a set of targets, which are the objective information to be
+obtained via sampling. (examples here).
+
+The fundemental objects here are the weights matrix \(\mathbf{W}\), and
+mixing vectors \(\gamma\) and \(\phi\). The weights matrix
+\(\mathbf{W}\) is an \(\mathcal{L} \times \mathcal{T}\) matrix, where
+\(\mathcal{L}\) and \(\mathcal{T}\) are the number of layers and targets
+respectively. The value of \(\mathbf{w}_{i,t}\) is the relative
+importance of the \(i\)-th layer to the \(t\)-th target compared to all
+of the other layers in the group the \(i\)-th layer is in, \(g(L_i)\).
+From this, and the layer group mixing vector \(\phi\), we can compute
+single layers for each target, where we similarly denote the value
+\(i\)-th target at location \((x,y)\) as \(T_i^{(x,y)}\). This can be
+computed as \[T_i^{(x,y)} = \sum_j \gamma_{g(L_j)}
+\cdot \mathbf{w}_{j,i} \cdot L_j^{(x,y)}\]or in slightly more compact
+matrix form
+
+\[\vec{\mathbf{T}}^{(x,y)} = \mathbf{W}^T(\vec{\gamma}^* \circ \vec{\mathbf{L}}^{(x,y)})\]
+
+where \(\vec{\gamma}^*\) is a vector of length \(\mathcal{L}\) where
+\(\gamma_i^* = g(L_i)\).
+
+Finally, these target layers can then be combined into a single map as a
+weighted average based on the target mixing weights \(\phi\), i.e.~the
+priorty map \(\mathbf{P}\) at \((x,y)\) can be computed as
+\[\mathbf{P}^{(x,y)} = \sum_i \phi_i
+T_i^{(x,y)}\] or in its complete matrix form
+
+\[\mathbf{P}^{(x,y)} = \mathbf{W}^T (\vec{\gamma}^* \circ \mathbf{L}^{(x,y)}) \cdot \phi \]
+
+where \(\circ\) is the element-wise product and \(\cdot\) is the inner
+product
+
+\begin{figure}
+\hypertarget{fig:concept}{%
+\centering
+\includegraphics{./figures/weights_concept.png}
+\caption{todo}\label{fig:concept}
+}
+\end{figure}
+
+\hypertarget{point-selection-algorithms}{%
+\subsection{Point selection
+algorithms}\label{point-selection-algorithms}}
+
+There is a long history of discourse in the literature about choosing a
+set of coordinates within a spatial domain that will result in a
+``best'' sample.
 
 \begin{itemize}
 \tightlist
 \item
-  Click on the ``Use this template'' button
+  Environmental uniqueness
 \item
-  Edit \texttt{README.md} with your own text, commit, and push
+  Spatial balance
 \item
-  This push will trigger the first build - the builds are only active on
-  the \texttt{main} branch (\emph{not} \texttt{master}!), and on pull
-  requests
+  Whatever the fuck cube sampling is doing
 \item
-  Go to \texttt{http://you.github.io/repo-name/} to view the html
-  version, and get access to the PDFs
-\item
-  Add your references to the \texttt{references.bib} file
-\item
-  Edit the \texttt{metadata.json} file to add the title, abstract,
-  authors
+  Particular scale-dependence weirdness in ecology
 \end{itemize}
 
-In particular, note that \emph{you do not need} to create a personnal
-access token to deploy to \texttt{gh-pages} (from where the website is
-served).
+\hypertarget{choosing-and-optimizing-weights}{%
+\subsection{Choosing and optimizing
+weights}\label{choosing-and-optimizing-weights}}
 
-\hypertarget{the-metadata-file}{%
-\section{The metadata file}\label{the-metadata-file}}
+There are a lot of caveats here.
 
-\hypertarget{general-information}{%
-\subsection{General information}\label{general-information}}
+\begin{itemize}
+\tightlist
+\item
+  Rarely is there relevant available data from which to derive an
+  evidence-based choice of the relative importance of each layer toward
+  sampling targets.
+\item
+  Often knowledge of species life-history matters for this, requires
+  experts on particular species
+\item
+  There is no a priori reason to believe there will be a positive
+  trade-off possible between two targets.
+\item
+  A particular choice of weight matrix may produce a priority map that
+  is very sensitive to minor changes in the weights
+\item
+  We should try to validate that our sampling sites work well, but this
+  is a chicken and egg problem with our current data. So we want a
+  max-entropy approach to real distributions from which we sample
+  possible realized sampling outcomes and compare as we tweak weights.
+\item
+  Need to assert the constraint that
+  \[\frac{\partial \mathbb{L}_i}{\partial
+  T_i}>0\] or otherwise that means the weights are not actually suited
+  toward targets
+\end{itemize}
 
-The title is a field in the \texttt{metadata.json}:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{\{}
-    \DataTypeTok{"title"}\FunctionTok{:} \StringTok{"Preprint template"}
-\FunctionTok{\}}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{authorship}{%
-\subsection{Authorship}\label{authorship}}
-
-Authors are listed as objects in the \texttt{authors} block. Each author
-is specified as follows:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{\{}
-      \DataTypeTok{"familyname"}\FunctionTok{:} \StringTok{"Bob"}\FunctionTok{,}
-      \DataTypeTok{"givennames"}\FunctionTok{:} \StringTok{"Alice"}\FunctionTok{,}
-      \DataTypeTok{"email"}\FunctionTok{:} \StringTok{"alice.bob@u.edu"}\FunctionTok{,}
-      \DataTypeTok{"orcid"}\FunctionTok{:} \StringTok{"0000{-}0000{-}0000{-}0001"}\FunctionTok{,}
-      \DataTypeTok{"affiliations"}\FunctionTok{:} \OtherTok{[}
-        \StringTok{"Affiliation 1"}\OtherTok{,}
-        \StringTok{"Affiliation 2"}
-      \OtherTok{]}\FunctionTok{,}
-      \DataTypeTok{"status"}\FunctionTok{:} \OtherTok{[}\StringTok{"corresponding"}\OtherTok{,} \StringTok{"equal"}\OtherTok{]}
-    \FunctionTok{\}}
-\end{Highlighting}
-\end{Shaded}
-
-The \texttt{email} field is recommended for all authors. The
-\texttt{status} field is only useful for the corresponding author, and
-to denote equal contributions. These informations are rendered on the
-initial page. If an \texttt{orcid} is given, it will be linked on the
-HTML and PDF versions.
-
-Note that there is \emph{no need} to number the affiliations - a small
-python script will take care of this automatically.
-
-\hypertarget{abstract}{%
-\subsection{Abstract}\label{abstract}}
-
-This template supports three types of abstracts, indicated in the
-metadata file as \texttt{abstract}:
-
-A regular \texttt{abstract} is defined as
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ErrorTok{"abstract":} \ErrorTok{"A} \ErrorTok{very} \ErrorTok{long} \ErrorTok{string"}
-\end{Highlighting}
-\end{Shaded}
-
-An itemized abstract is an array of strings, each representing a bullet
-point:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ErrorTok{"abstract":} \OtherTok{[}
-    \StringTok{"Point 1"}\OtherTok{,}
-    \StringTok{"Point 2"}
-\OtherTok{]}
-\end{Highlighting}
-\end{Shaded}
-
-A structured abstract is an object with key-value pairs :
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\ErrorTok{"abstract":} \FunctionTok{\{}
-    \DataTypeTok{"Location"}\FunctionTok{:} \StringTok{"Worldwide"}\FunctionTok{,}
-    \DataTypeTok{"Organisms"}\FunctionTok{:} \StringTok{"Mammals"}
-\FunctionTok{\}}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{citation-style}{%
-\subsection{Citation style}\label{citation-style}}
-
-The \texttt{citationstyle} key corresponds to the name, with
-\texttt{.csl} ommited, of a CSL stylesheet stored in the
-\href{https://github.com/citation-style-language/}{citation style
-language} repository. Note that there is no difference between main and
-dependent styles, the build engine will take the correct steps to get
-the correct style. The default is
-\texttt{"citationstyle":\ "ecology-letters"}. There is a longer section
-about references management later on.
-
-\hypertarget{references-management}{%
-\section{References management}\label{references-management}}
-
-The references are managed by \texttt{pandoc}. Note that we \emph{do
-not} use \texttt{pandoc-citeproc}, which was an external module for
-older \texttt{pandoc} versions. References \emph{must} be stored in a
-\texttt{references.bib} file, and that it would make sense to order it
-alphabetically by key.
-
-We use \href{https://www.zotero.org/}{Zotero} for references management,
-and for the lab's manuscripts, we work from folders in a shared library
-(with a folder for every manuscript).
-
-It is recommedned to use the
-\href{https://retorque.re/zotero-better-bibtex/}{Better BibTeX} plugin
-for citation key generations, and auto-export of the shared library to
-the \texttt{references.bib} file. We use a citation key format meant to
-convey information on the author (first author full name), date (complet
-year), and title (first three letters of the first two non-stop words).
-It must be set in the Better BibTeX preferences as (you might need to
-remove the line changes):
-
-\begin{verbatim}
-[auth:fold]
-[year]
-[title:fold:nopunctordash:skipwords:lower:select=1,1:substring=1,3:capitalize]
-[title:fold:nopunctordash:skipwords:lower:select=2,2:substring=1,3:capitalize]
-\end{verbatim}
-
-It is a good idea to configure Better BibTeX to auto-export on change,
-and to remove a lot of fields that are not strictly speaking required
-for references. The list of fields we usually ignore is:
-
-\begin{verbatim}
-abstract,copyright,annotation,file,pmid,month,shorttitle,keywords
-\end{verbatim}
-
-The citations are done using the normal markdown syntax, where
-\texttt{@Elton1927AniEco} produces Elton (1927), and
-\texttt{{[}@Camerano1880EquViv{]}} produces (Camerano 1880).
-
-\hypertarget{figures-tables-and-other-floats}{%
-\section{Figures, Tables, and other
-floats}\label{figures-tables-and-other-floats}}
-
-Note that you can wrap the text of legends for both figures and tables.
-This avoids the issue of having very long lines.
-
-\hypertarget{mathematics}{%
-\subsection{Mathematics}\label{mathematics}}
-
-The following equation
-
-\begin{equation}\protect\hypertarget{eq:eq1}{}{J'(p) = \frac{1}{\text{log}(S)}\times\left(-\sum p \times \text{log}(p)\right)}\label{eq:eq1}\end{equation}
-
-is produced using
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\SpecialStringTok{$$J\textquotesingle{}(p) = }\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{1\}\{}\SpecialCharTok{\textbackslash{}text}\NormalTok{\{log\}}\SpecialStringTok{(S)\}}\SpecialCharTok{\textbackslash{}times}\SpecialStringTok{ ... $$}\NormalTok{ \{\#eq:eq1\}}
-\end{Highlighting}
-\end{Shaded}
-
-and can be referenced using \texttt{@eq:eq1}, which will result in
-eq.~\ref{eq:eq1}. Note that because we use \texttt{pandoc-crossref}, the
-label ``eq.'' will be generated automatically.
-
-\hypertarget{tables}{%
-\subsection{Tables}\label{tables}}
-
-Table legends go on the line after the table itself. To generate a
-reference to the table, use \texttt{\{\#tbl:id\}} -- then, in the text,
-you can use \texttt{\{@tbl:id\}} to refer to the table. For example, the
-table below is tbl.~\ref{tbl:id}. You can remove the \emph{table} in
-front by using \texttt{!@tbl:id}, or force it to be capitalized with
-\texttt{\textbackslash{}*tbl:id}.
-
-\hypertarget{tbl:id}{}
-\begin{longtable}[]{@{}rrrrl@{}}
-\caption{\label{tbl:id}This is a table, and its identifier is
-\texttt{id} -- we can refer to it using \texttt{\{@tbl:id\}}. Note that
-even if the table legend is written below the table itself, it will
-appear on top in the PDF document.}\tabularnewline
-\toprule
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width &
-Species\tabularnewline
-\midrule
-\endfirsthead
-\toprule
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width &
-Species\tabularnewline
-\midrule
-\endhead
-5.1 & 3.5 & 1.4 & 0.2 & setosa\tabularnewline
-5.0 & 3.6 & 1.4 & 0.2 & setosa\tabularnewline
-5.4 & 3.9 & 1.7 & 0.4 & setosa\tabularnewline
-\bottomrule
-\end{longtable}
-
-\hypertarget{figures}{%
-\section{Figures}\label{figures}}
-
-Figures can have a legend -- all figures \emph{must} be in the
-\texttt{figures/} folder of the project, as it is also used for the
-website. We recommend to use good resolution images, rather than PDFs,
-or at least to have multiple versions available.
-
-\begin{verbatim}
-![This is the legend of the figure...](figures/figure.png){#fig:figure}
-\end{verbatim}
+\hypertarget{target-tradeoffs}{%
+\subsubsection{Target tradeoffs}\label{target-tradeoffs}}
 
 \begin{figure}
-\hypertarget{fig:figure}{%
+\hypertarget{fig:tradeoff}{%
 \centering
-\includegraphics{figures/figure.png}
-\caption{This is the legend of the figure, which will be shown in the
-margin in preprint mode, and underneath the figure in draft mode. The
-legend can contain references, etc. It is advised to use a resolution of
-at least 600dpi for the figures.}\label{fig:figure}
+\includegraphics{./figures/tradeoff_concept.png}
+\caption{todo}\label{fig:tradeoff}
 }
 \end{figure}
 
-We can now use \texttt{@fig:figure} to refer to fig.~\ref{fig:figure}.
+\hypertarget{sensitivity-analysis}{%
+\subsubsection{Sensitivity analysis}\label{sensitivity-analysis}}
 
-\hypertarget{example-text}{%
-\section{Example text}\label{example-text}}
+\hypertarget{validation-through-simulation-of-the-sampling-process}{%
+\subsubsection{Validation through simulation of the sampling
+process}\label{validation-through-simulation-of-the-sampling-process}}
 
-Connectance, defined as the ratio of realized interactions on the total
-number of potential interactions, is one of the most common descriptor
-of network structure. In a bipartite network with \(T\) species at the
-top, and \(B\) at the bottom, having a total of \(L\) interactions, it
-is defined as \(Co = L/(T\times B)\). Connectance has a lower bound, as
-the network cannot have fewer interactions that the number of species in
-its more speciose level -- the minimal connectance is therefore
-\(c_m = \text{max}(T,B)\). This makes the connectance of networks of
-different sizes difficult to compare, especially since bipartite
-networks tends to have a low connectance. For this reason, we used a
-corrected version of connectance, defined as
+\hypertarget{case-study-bird-or-perhaps-non-migratory-species-tbd-in-quebec}{%
+\section{Case study: bird (or perhaps non migratory?) species TBD in
+Quebec}\label{case-study-bird-or-perhaps-non-migratory-species-tbd-in-quebec}}
 
-\begin{equation}\protect\hypertarget{eq:cstar}{}{Co^\star=\frac{L-c_m}{T\times B-c_m} \,.}\label{eq:cstar}\end{equation}
-
-\hypertarget{this-is-a-subsection}{%
-\subsection{This is a subsection}\label{this-is-a-subsection}}
-
-This takes values between 0 (the network has the minimal number of
-interactions) and 1 (all species are connected), but is robust to
-variations in species richness.
-
-\hypertarget{this-is-another-subsection}{%
-\subsection{This is another
-subsection}\label{this-is-another-subsection}}
-
-This takes values between 0 (the network has the minimal number of
-interactions) and 1 (all species are connected), but is robust to
-variations in species richness.
-
-\hypertarget{some-non-standard-maths}{%
-\subsection{Some non-standard maths}\label{some-non-standard-maths}}
-
-The phylogenetic reconstruction of \(\hat{\mathscr{L}}\) and
-\(\hat{\mathscr{R}}\) has an associated uncertainty, represented by the
-breadth of the uniform distribution associated to each of their entries.
-Therefore, we can use this information to assemble a
-\emph{probabilistic} metaweb in the sense of
-(\textbf{Poisot2016StrPro?}), \emph{i.e.} in which every interaction is
-represented as a single, independent, Bernoulli event of probability
-\(p\).
-
-Specifically, we have adopted the following approach. For every entry in
-\(\hat{\mathscr{L}}\) and \(\hat{\mathscr{R}}\), we draw a value from
-its distribution. This results in one instance of the possible left
-(\(\hat{\mathscr{l}}\)) and right (\(\hat{\mathscr{r}}\)) subspaces for
-the Canadian metaweb. These can be multiplied, to produce one matrix of
-real values. Because the entries in \(\hat{\mathscr{l}}\) and
-\(\hat{\mathscr{r}}\) are in the same space where \(\mathscr{L}\) and
-\(\mathscr{R}\) were originally predicted, it follows that the threshold
-\(\rho\) estimated for the European metaweb also applies. We use this
-information to produce one random Canadian metaweb,
-\(N = \hat{\mathscr{L}}\)\(\hat{\mathscr{R}}' \ge \rho\).
-
-Because the intervals around some trait values can be broad (in fact,
-probably broader than what they would actually be, see \emph{e.g.}
-\textbf{Garland1999IntPhy?}), we repeat the above process
-\(2\times 10^5\) times, which results in a probabilistic metaweb \(P\),
-where the probability of an interaction (here conveying our degree of
-trust that it exists given the inferred trait distributions) is given by
-the number of times where it appears across all random draws \(N\),
-divided by the number of samples. An interaction with \(P_{i,j} = 1\)
-means that these two species were predicted to interact in all
-\(2\times 10^5\) random draws, etc..
-
-\hypertarget{references}{%
-\section*{References}\label{references}}
-\addcontentsline{toc}{section}{References}
-
-\hypertarget{refs}{}
-\begin{CSLReferences}{1}{0}
-\leavevmode\hypertarget{ref-Camerano1880EquViv}{}%
-Camerano, L. (1880). Dell'equilibrio dei viventi merce la reciproca
-distruzione. \emph{Atti Della R. Accad. Delle Sci. Torino}, 15,
-393--414.
-
-\leavevmode\hypertarget{ref-Elton1927AniEco}{}%
-Elton, C.S. (1927). \emph{Animal ecology}. University of Chicago Press.
-
-\end{CSLReferences}
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
 
 \end{document}

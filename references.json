@@ -1,119 +1,1629 @@
 [
     {
-        "DOI": "10.1002/jez.1400610202",
+        "DOI": "10.1111/ele.13106",
         "author": [
             {
-                "family": "Allee",
-                "given": "W. C."
-            },
-            {
-                "family": "Bowen",
-                "given": "Edith S."
+                "family": "Anderson",
+                "given": "Christopher B."
             }
         ],
-        "container-title": "Journal of Experimental Zoology",
-        "id": "Allee1932StuAni",
+        "container-title": "Ecology Letters",
+        "editor": [
+            {
+                "family": "Haddad",
+                "given": "Nick"
+            }
+        ],
+        "id": "Anderson2018BioMon",
+        "issue": "10",
+        "issued": {
+            "date-parts": [
+                [
+                    2018
+                ]
+            ]
+        },
+        "page": "1572-1585",
+        "title": "Biodiversity monitoring, earth observations and the ecology of scale",
+        "type": "article-journal",
+        "volume": "21"
+    },
+    {
+        "DOI": "10.1038/s41598-020-67666-3",
+        "author": [
+            {
+                "family": "Andrade-Pacheco",
+                "given": "Ricardo"
+            },
+            {
+                "family": "Rerolle",
+                "given": "Francois"
+            },
+            {
+                "family": "Lemoine",
+                "given": "Jean"
+            },
+            {
+                "family": "Hernandez",
+                "given": "Leda"
+            },
+            {
+                "family": "Me\u00eft\u00e9",
+                "given": "Aboulaye"
+            },
+            {
+                "family": "Juziwelo",
+                "given": "Lazarus"
+            },
+            {
+                "family": "Bibaut",
+                "given": "Aur\u00e9lien F."
+            },
+            {
+                "family": "Laan",
+                "given": "Mark J.",
+                "non-dropping-particle": "van der"
+            },
+            {
+                "family": "Arnold",
+                "given": "Benjamin F."
+            },
+            {
+                "family": "Sturrock",
+                "given": "Hugh J. W."
+            }
+        ],
+        "container-title": "Scientific Reports",
+        "id": "Andrade-Pacheco2020FinHot",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    2020
+                ]
+            ]
+        },
+        "page": "10939",
+        "publisher": "Nature Publishing Group",
+        "title": "Finding hotspots: Development of an adaptive spatial sampling approach",
+        "type": "article-journal",
+        "volume": "10"
+    },
+    {
+        "DOI": "10.1038/s41559-017-0176",
+        "author": [
+            {
+                "family": "Bush",
+                "given": "Alex"
+            },
+            {
+                "family": "Sollmann",
+                "given": "Rahel"
+            },
+            {
+                "family": "Wilting",
+                "given": "Andreas"
+            },
+            {
+                "family": "Bohmann",
+                "given": "Kristine"
+            },
+            {
+                "family": "Cole",
+                "given": "Beth"
+            },
+            {
+                "family": "Balzter",
+                "given": "Heiko"
+            },
+            {
+                "family": "Martius",
+                "given": "Christopher"
+            },
+            {
+                "family": "Zlinszky",
+                "given": "Andr\u00e1s"
+            },
+            {
+                "family": "Calvignac-Spencer",
+                "given": "S\u00e9bastien"
+            },
+            {
+                "family": "Cobbold",
+                "given": "Christina A."
+            },
+            {
+                "family": "Dawson",
+                "given": "Terence P."
+            },
+            {
+                "family": "Emerson",
+                "given": "Brent C."
+            },
+            {
+                "family": "Ferrier",
+                "given": "Simon"
+            },
+            {
+                "family": "Gilbert",
+                "given": "M. Thomas P."
+            },
+            {
+                "family": "Herold",
+                "given": "Martin"
+            },
+            {
+                "family": "Jones",
+                "given": "Laurence"
+            },
+            {
+                "family": "Leendertz",
+                "given": "Fabian H."
+            },
+            {
+                "family": "Matthews",
+                "given": "Louise"
+            },
+            {
+                "family": "Millington",
+                "given": "James D. A."
+            },
+            {
+                "family": "Olson",
+                "given": "John R."
+            },
+            {
+                "family": "Ovaskainen",
+                "given": "Otso"
+            },
+            {
+                "family": "Raffaelli",
+                "given": "Dave"
+            },
+            {
+                "family": "Reeve",
+                "given": "Richard"
+            },
+            {
+                "family": "R\u00f6del",
+                "given": "Mark-Oliver"
+            },
+            {
+                "family": "Rodgers",
+                "given": "Torrey W."
+            },
+            {
+                "family": "Snape",
+                "given": "Stewart"
+            },
+            {
+                "family": "Visseren-Hamakers",
+                "given": "Ingrid"
+            },
+            {
+                "family": "Vogler",
+                "given": "Alfried P."
+            },
+            {
+                "family": "White",
+                "given": "Piran C. L."
+            },
+            {
+                "family": "Wooster",
+                "given": "Martin J."
+            },
+            {
+                "family": "Yu",
+                "given": "Douglas W."
+            }
+        ],
+        "container-title": "Nature Ecology & Evolution",
+        "id": "Bush2017ConEar",
+        "issue": "7",
+        "issued": {
+            "date-parts": [
+                [
+                    2017
+                ]
+            ]
+        },
+        "page": "1-9",
+        "publisher": "Nature Publishing Group",
+        "title": "Connecting Earth observation to high-throughput biodiversity data",
+        "type": "article-journal",
+        "volume": "1"
+    },
+    {
+        "DOI": "10.1093/biomet/91.4.893",
+        "author": [
+            {
+                "family": "Deville",
+                "given": "Jean-Claude"
+            },
+            {
+                "family": "Till\u00e9",
+                "given": "Yves"
+            }
+        ],
+        "container-title": "Biometrika",
+        "id": "Deville2004EffBal",
+        "issue": "4",
+        "issued": {
+            "date-parts": [
+                [
+                    2004
+                ]
+            ]
+        },
+        "page": "893-912",
+        "title": "Efficient balanced sampling: The cube method",
+        "type": "article-journal",
+        "volume": "91"
+    },
+    {
+        "DOI": "10.1111/j.1541-0420.2011.01699.x",
+        "author": [
+            {
+                "family": "Grafstr\u00f6m",
+                "given": "Anton"
+            },
+            {
+                "family": "Lundstr\u00f6m",
+                "given": "Niklas L. P."
+            },
+            {
+                "family": "Schelin",
+                "given": "Lina"
+            }
+        ],
+        "container-title": "Biometrics",
+        "id": "Grafstrom2012SpaBal",
         "issue": "2",
         "issued": {
             "date-parts": [
                 [
-                    1932,
-                    2
+                    2012
                 ]
             ]
         },
-        "page": "185-207",
-        "title": "Studies in animal aggregations: Mass protection against colloidal silver among goldfishes",
+        "page": "514-520",
+        "title": "Spatially Balanced Sampling through the Pivotal Method",
         "type": "article-journal",
-        "volume": "61"
+        "volume": "68"
     },
     {
+        "DOI": "10.1126/sciadv.1500052",
         "author": [
             {
-                "family": "Camerano",
-                "given": "Lorenzo"
-            }
-        ],
-        "container-title": "Atti Della R. Accad. Delle Sci. Torino",
-        "id": "Camerano1880EquViv",
-        "issued": {
-            "date-parts": [
-                [
-                    1880
-                ]
-            ]
-        },
-        "page": "393-414",
-        "title": "Dell\u2019equilibrio dei viventi merce la reciproca distruzione",
-        "type": "article-journal",
-        "volume": "15"
-    },
-    {
-        "author": [
-            {
-                "family": "Elton",
-                "given": "Charles S"
-            }
-        ],
-        "id": "Elton1927AniEco",
-        "issued": {
-            "date-parts": [
-                [
-                    1927
-                ]
-            ]
-        },
-        "publisher": "University of Chicago Press",
-        "title": "Animal ecology",
-        "type": "book"
-    },
-    {
-        "author": [
-            {
-                "family": "Fahrenholz",
-                "given": "H."
-            }
-        ],
-        "container-title": "Zool. Anz.",
-        "id": "Fahrenholz1913EctUnd",
-        "issued": {
-            "date-parts": [
-                [
-                    1913
-                ]
-            ]
-        },
-        "page": "371-374",
-        "title": "Ectoparasiten und abstammungslehre",
-        "type": "article-journal",
-        "volume": "41"
-    },
-    {
-        "DOI": "10.1111/j.1096-3642.1935.tb01680.x",
-        "author": [
-            {
-                "family": "Nicholson",
-                "given": "A. J."
+                "family": "Haddad",
+                "given": "Nick M."
             },
             {
-                "family": "Bailey",
-                "given": "V. A."
+                "family": "Brudvig",
+                "given": "Lars A."
+            },
+            {
+                "family": "Clobert",
+                "given": "Jean"
+            },
+            {
+                "family": "Davies",
+                "given": "Kendi F."
+            },
+            {
+                "family": "Gonzalez",
+                "given": "Andrew"
+            },
+            {
+                "family": "Holt",
+                "given": "Robert D."
+            },
+            {
+                "family": "Lovejoy",
+                "given": "Thomas E."
+            },
+            {
+                "family": "Sexton",
+                "given": "Joseph O."
+            },
+            {
+                "family": "Austin",
+                "given": "Mike P."
+            },
+            {
+                "family": "Collins",
+                "given": "Cathy D."
+            },
+            {
+                "family": "Cook",
+                "given": "William M."
+            },
+            {
+                "family": "Damschen",
+                "given": "Ellen I."
+            },
+            {
+                "family": "Ewers",
+                "given": "Robert M."
+            },
+            {
+                "family": "Foster",
+                "given": "Bryan L."
+            },
+            {
+                "family": "Jenkins",
+                "given": "Clinton N."
+            },
+            {
+                "family": "King",
+                "given": "Andrew J."
+            },
+            {
+                "family": "Laurance",
+                "given": "William F."
+            },
+            {
+                "family": "Levey",
+                "given": "Douglas J."
+            },
+            {
+                "family": "Margules",
+                "given": "Chris R."
+            },
+            {
+                "family": "Melbourne",
+                "given": "Brett A."
+            },
+            {
+                "family": "Nicholls",
+                "given": "A. O."
+            },
+            {
+                "family": "Orrock",
+                "given": "John L."
+            },
+            {
+                "family": "Song",
+                "given": "Dan-Xia"
+            },
+            {
+                "family": "Townshend",
+                "given": "John R."
             }
         ],
-        "container-title": "Proceedings of the Zoological Society of London",
-        "id": "Nicholson1935BalAni",
+        "container-title": "Science Advances",
+        "id": "Haddad2015HabFra",
+        "issue": "2",
+        "issued": {
+            "date-parts": [
+                [
+                    2015
+                ]
+            ]
+        },
+        "page": "e1500052",
+        "publisher": "American Association for the Advancement of Science",
+        "title": "Habitat fragmentation and its lasting impact on Earth\u2019s ecosystems",
+        "type": "article-journal",
+        "volume": "1"
+    },
+    {
+        "DOI": "10.1038/nplants.2016.24",
+        "author": [
+            {
+                "family": "Jetz",
+                "given": "Walter"
+            },
+            {
+                "family": "Cavender-Bares",
+                "given": "Jeannine"
+            },
+            {
+                "family": "Pavlick",
+                "given": "Ryan"
+            },
+            {
+                "family": "Schimel",
+                "given": "David"
+            },
+            {
+                "family": "Davis",
+                "given": "Frank W."
+            },
+            {
+                "family": "Asner",
+                "given": "Gregory P."
+            },
+            {
+                "family": "Guralnick",
+                "given": "Robert"
+            },
+            {
+                "family": "Kattge",
+                "given": "Jens"
+            },
+            {
+                "family": "Latimer",
+                "given": "Andrew M."
+            },
+            {
+                "family": "Moorcroft",
+                "given": "Paul"
+            },
+            {
+                "family": "Schaepman",
+                "given": "Michael E."
+            },
+            {
+                "family": "Schildhauer",
+                "given": "Mark P."
+            },
+            {
+                "family": "Schneider",
+                "given": "Fabian D."
+            },
+            {
+                "family": "Schrodt",
+                "given": "Franziska"
+            },
+            {
+                "family": "Stahl",
+                "given": "Ulrike"
+            },
+            {
+                "family": "Ustin",
+                "given": "Susan L."
+            }
+        ],
+        "container-title": "Nature Plants",
+        "id": "Jetz2016MonPla",
         "issue": "3",
         "issued": {
             "date-parts": [
                 [
-                    1935,
-                    9
+                    2016
                 ]
             ]
         },
-        "page": "551-598",
-        "title": "The Balance of Animal Populations.Part I.",
+        "page": "1-5",
+        "publisher": "Nature Publishing Group",
+        "title": "Monitoring plant functional diversity from space",
         "type": "article-journal",
-        "volume": "105"
+        "volume": "2"
+    },
+    {
+        "DOI": "10.1038/s41586-020-2705-y",
+        "author": [
+            {
+                "family": "Lecl\u00e8re",
+                "given": "David"
+            },
+            {
+                "family": "Obersteiner",
+                "given": "Michael"
+            },
+            {
+                "family": "Barrett",
+                "given": "Mike"
+            },
+            {
+                "family": "Butchart",
+                "given": "Stuart H. M."
+            },
+            {
+                "family": "Chaudhary",
+                "given": "Abhishek"
+            },
+            {
+                "family": "De Palma",
+                "given": "Adriana"
+            },
+            {
+                "family": "DeClerck",
+                "given": "Fabrice A. J."
+            },
+            {
+                "family": "Di Marco",
+                "given": "Moreno"
+            },
+            {
+                "family": "Doelman",
+                "given": "Jonathan C."
+            },
+            {
+                "family": "D\u00fcrauer",
+                "given": "Martina"
+            },
+            {
+                "family": "Freeman",
+                "given": "Robin"
+            },
+            {
+                "family": "Harfoot",
+                "given": "Michael"
+            },
+            {
+                "family": "Hasegawa",
+                "given": "Tomoko"
+            },
+            {
+                "family": "Hellweg",
+                "given": "Stefanie"
+            },
+            {
+                "family": "Hilbers",
+                "given": "Jelle P."
+            },
+            {
+                "family": "Hill",
+                "given": "Samantha L. L."
+            },
+            {
+                "family": "Humpen\u00f6der",
+                "given": "Florian"
+            },
+            {
+                "family": "Jennings",
+                "given": "Nancy"
+            },
+            {
+                "family": "Krisztin",
+                "given": "Tam\u00e1s"
+            },
+            {
+                "family": "Mace",
+                "given": "Georgina M."
+            },
+            {
+                "family": "Ohashi",
+                "given": "Haruka"
+            },
+            {
+                "family": "Popp",
+                "given": "Alexander"
+            },
+            {
+                "family": "Purvis",
+                "given": "Andy"
+            },
+            {
+                "family": "Schipper",
+                "given": "Aafke M."
+            },
+            {
+                "family": "Tabeau",
+                "given": "Andrzej"
+            },
+            {
+                "family": "Valin",
+                "given": "Hugo"
+            },
+            {
+                "family": "Meijl",
+                "given": "Hans",
+                "non-dropping-particle": "van"
+            },
+            {
+                "family": "Zeist",
+                "given": "Willem-Jan",
+                "non-dropping-particle": "van"
+            },
+            {
+                "family": "Visconti",
+                "given": "Piero"
+            },
+            {
+                "family": "Alkemade",
+                "given": "Rob"
+            },
+            {
+                "family": "Almond",
+                "given": "Rosamunde"
+            },
+            {
+                "family": "Bunting",
+                "given": "Gill"
+            },
+            {
+                "family": "Burgess",
+                "given": "Neil D."
+            },
+            {
+                "family": "Cornell",
+                "given": "Sarah E."
+            },
+            {
+                "family": "Di Fulvio",
+                "given": "Fulvio"
+            },
+            {
+                "family": "Ferrier",
+                "given": "Simon"
+            },
+            {
+                "family": "Fritz",
+                "given": "Steffen"
+            },
+            {
+                "family": "Fujimori",
+                "given": "Shinichiro"
+            },
+            {
+                "family": "Grooten",
+                "given": "Monique"
+            },
+            {
+                "family": "Harwood",
+                "given": "Thomas"
+            },
+            {
+                "family": "Havl\u00edk",
+                "given": "Petr"
+            },
+            {
+                "family": "Herrero",
+                "given": "Mario"
+            },
+            {
+                "family": "Hoskins",
+                "given": "Andrew J."
+            },
+            {
+                "family": "Jung",
+                "given": "Martin"
+            },
+            {
+                "family": "Kram",
+                "given": "Tom"
+            },
+            {
+                "family": "Lotze-Campen",
+                "given": "Hermann"
+            },
+            {
+                "family": "Matsui",
+                "given": "Tetsuya"
+            },
+            {
+                "family": "Meyer",
+                "given": "Carsten"
+            },
+            {
+                "family": "Nel",
+                "given": "Deon"
+            },
+            {
+                "family": "Newbold",
+                "given": "Tim"
+            },
+            {
+                "family": "Schmidt-Traub",
+                "given": "Guido"
+            },
+            {
+                "family": "Stehfest",
+                "given": "Elke"
+            },
+            {
+                "family": "Strassburg",
+                "given": "Bernardo B. N."
+            },
+            {
+                "family": "Vuuren",
+                "given": "Detlef P.",
+                "non-dropping-particle": "van"
+            },
+            {
+                "family": "Ware",
+                "given": "Chris"
+            },
+            {
+                "family": "Watson",
+                "given": "James E. M."
+            },
+            {
+                "family": "Wu",
+                "given": "Wenchao"
+            },
+            {
+                "family": "Young",
+                "given": "Lucy"
+            }
+        ],
+        "container-title": "Nature",
+        "id": "Leclere2020BenCur",
+        "issue": "7826",
+        "issued": {
+            "date-parts": [
+                [
+                    2020
+                ]
+            ]
+        },
+        "page": "551-556",
+        "publisher": "Nature Publishing Group",
+        "title": "Bending the curve of terrestrial biodiversity needs an integrated strategy",
+        "type": "article-journal",
+        "volume": "585"
+    },
+    {
+        "DOI": "10.1016/j.spl.2021.109229",
+        "author": [
+            {
+                "family": "Leuenberger",
+                "given": "Michael"
+            },
+            {
+                "family": "Eustache",
+                "given": "Esther"
+            },
+            {
+                "family": "Jauslin",
+                "given": "Rapha\u00ebl"
+            },
+            {
+                "family": "Till\u00e9",
+                "given": "Yves"
+            }
+        ],
+        "container-title": "Statistics & Probability Letters",
+        "id": "Leuenberger2022BalSam",
+        "issued": {
+            "date-parts": [
+                [
+                    2022
+                ]
+            ]
+        },
+        "page": "109229",
+        "title": "Balancing a sample almost perfectly",
+        "type": "article-journal",
+        "volume": "180"
+    },
+    {
+        "DOI": "10.1038/s41586-020-2920-6",
+        "author": [
+            {
+                "family": "Leung",
+                "given": "Brian"
+            },
+            {
+                "family": "Hargreaves",
+                "given": "Anna L."
+            },
+            {
+                "family": "Greenberg",
+                "given": "Dan A."
+            },
+            {
+                "family": "McGill",
+                "given": "Brian"
+            },
+            {
+                "family": "Dornelas",
+                "given": "Maria"
+            },
+            {
+                "family": "Freeman",
+                "given": "Robin"
+            }
+        ],
+        "container-title": "Nature",
+        "id": "Leung2020CluCat",
+        "issue": "7837",
+        "issued": {
+            "date-parts": [
+                [
+                    2020
+                ]
+            ]
+        },
+        "page": "267-271",
+        "publisher": "Nature Publishing Group",
+        "title": "Clustered versus catastrophic global vertebrate declines",
+        "type": "article-journal",
+        "volume": "588"
+    },
+    {
+        "DOI": "10.1038/srep41591",
+        "author": [
+            {
+                "family": "Mihoub",
+                "given": "Jean-Baptiste"
+            },
+            {
+                "family": "Henle",
+                "given": "Klaus"
+            },
+            {
+                "family": "Titeux",
+                "given": "Nicolas"
+            },
+            {
+                "family": "Brotons",
+                "given": "Llu\u00eds"
+            },
+            {
+                "family": "Brummitt",
+                "given": "Neil A."
+            },
+            {
+                "family": "Schmeller",
+                "given": "Dirk S."
+            }
+        ],
+        "container-title": "Scientific Reports",
+        "id": "Mihoub2017SetTem",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    2017
+                ]
+            ]
+        },
+        "page": "41591",
+        "publisher": "Nature Publishing Group",
+        "title": "Setting temporal baselines for biodiversity: The limits of available monitoring data for capturing the full impact of anthropogenic pressures",
+        "type": "article-journal",
+        "volume": "7"
+    },
+    {
+        "DOI": "10.1111/geb.12218",
+        "author": [
+            {
+                "family": "O\u2019Connor",
+                "given": "Mary I."
+            },
+            {
+                "family": "Holding",
+                "given": "Johnna M."
+            },
+            {
+                "family": "Kappel",
+                "given": "Carrie V."
+            },
+            {
+                "family": "Duarte",
+                "given": "Carlos M."
+            },
+            {
+                "family": "Brander",
+                "given": "Keith"
+            },
+            {
+                "family": "Brown",
+                "given": "Christopher J."
+            },
+            {
+                "family": "Bruno",
+                "given": "John F."
+            },
+            {
+                "family": "Buckley",
+                "given": "Lauren"
+            },
+            {
+                "family": "Burrows",
+                "given": "Michael T."
+            },
+            {
+                "family": "Halpern",
+                "given": "Benjamin S."
+            },
+            {
+                "family": "Kiessling",
+                "given": "Wolfgang"
+            },
+            {
+                "family": "Moore",
+                "given": "Pippa"
+            },
+            {
+                "family": "Pandolfi",
+                "given": "John M."
+            },
+            {
+                "family": "Parmesan",
+                "given": "Camille"
+            },
+            {
+                "family": "Poloczanska",
+                "given": "Elvira S."
+            },
+            {
+                "family": "Schoeman",
+                "given": "David S."
+            },
+            {
+                "family": "Sydeman",
+                "given": "William J."
+            },
+            {
+                "family": "Richardson",
+                "given": "Anthony J."
+            }
+        ],
+        "container-title": "Global Ecology and Biogeography",
+        "id": "OConnor2015StrCon",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    2015
+                ]
+            ]
+        },
+        "page": "64-76",
+        "title": "Strengthening confidence in climate change impact science",
+        "type": "article-journal",
+        "volume": "24"
+    },
+    {
+        "DOI": "10.1126/science.aai9214",
+        "author": [
+            {
+                "family": "Pecl",
+                "given": "Gretta T."
+            },
+            {
+                "family": "Ara\u00fajo",
+                "given": "Miguel B."
+            },
+            {
+                "family": "Bell",
+                "given": "Johann D."
+            },
+            {
+                "family": "Blanchard",
+                "given": "Julia"
+            },
+            {
+                "family": "Bonebrake",
+                "given": "Timothy C."
+            },
+            {
+                "family": "Chen",
+                "given": "I-Ching"
+            },
+            {
+                "family": "Clark",
+                "given": "Timothy D."
+            },
+            {
+                "family": "Colwell",
+                "given": "Robert K."
+            },
+            {
+                "family": "Danielsen",
+                "given": "Finn"
+            },
+            {
+                "family": "Eveng\u00e5rd",
+                "given": "Birgitta"
+            },
+            {
+                "family": "Falconi",
+                "given": "Lorena"
+            },
+            {
+                "family": "Ferrier",
+                "given": "Simon"
+            },
+            {
+                "family": "Frusher",
+                "given": "Stewart"
+            },
+            {
+                "family": "Garcia",
+                "given": "Raquel A."
+            },
+            {
+                "family": "Griffis",
+                "given": "Roger B."
+            },
+            {
+                "family": "Hobday",
+                "given": "Alistair J."
+            },
+            {
+                "family": "Janion-Scheepers",
+                "given": "Charlene"
+            },
+            {
+                "family": "Jarzyna",
+                "given": "Marta A."
+            },
+            {
+                "family": "Jennings",
+                "given": "Sarah"
+            },
+            {
+                "family": "Lenoir",
+                "given": "Jonathan"
+            },
+            {
+                "family": "Linnetved",
+                "given": "Hlif I."
+            },
+            {
+                "family": "Martin",
+                "given": "Victoria Y."
+            },
+            {
+                "family": "McCormack",
+                "given": "Phillipa C."
+            },
+            {
+                "family": "McDonald",
+                "given": "Jan"
+            },
+            {
+                "family": "Mitchell",
+                "given": "Nicola J."
+            },
+            {
+                "family": "Mustonen",
+                "given": "Tero"
+            },
+            {
+                "family": "Pandolfi",
+                "given": "John M."
+            },
+            {
+                "family": "Pettorelli",
+                "given": "Nathalie"
+            },
+            {
+                "family": "Popova",
+                "given": "Ekaterina"
+            },
+            {
+                "family": "Robinson",
+                "given": "Sharon A."
+            },
+            {
+                "family": "Scheffers",
+                "given": "Brett R."
+            },
+            {
+                "family": "Shaw",
+                "given": "Justine D."
+            },
+            {
+                "family": "Sorte",
+                "given": "Cascade J. B."
+            },
+            {
+                "family": "Strugnell",
+                "given": "Jan M."
+            },
+            {
+                "family": "Sunday",
+                "given": "Jennifer M."
+            },
+            {
+                "family": "Tuanmu",
+                "given": "Mao-Ning"
+            },
+            {
+                "family": "Verg\u00e9s",
+                "given": "Adriana"
+            },
+            {
+                "family": "Villanueva",
+                "given": "Cecilia"
+            },
+            {
+                "family": "Wernberg",
+                "given": "Thomas"
+            },
+            {
+                "family": "Wapstra",
+                "given": "Erik"
+            },
+            {
+                "family": "Williams",
+                "given": "Stephen E."
+            }
+        ],
+        "container-title": "Science",
+        "id": "Pecl2017BioRed",
+        "issue": "6332",
+        "issued": {
+            "date-parts": [
+                [
+                    2017
+                ]
+            ]
+        },
+        "page": "eaai9214",
+        "publisher": "American Association for the Advancement of Science",
+        "title": "Biodiversity redistribution under climate change: Impacts on ecosystems and human well-being",
+        "type": "article-journal",
+        "volume": "355"
+    },
+    {
+        "DOI": "10.1111/jbi.14127",
+        "author": [
+            {
+                "family": "Poisot",
+                "given": "Timoth\u00e9e"
+            },
+            {
+                "family": "Bergeron",
+                "given": "Gabriel"
+            },
+            {
+                "family": "Cazelles",
+                "given": "Kevin"
+            },
+            {
+                "family": "Dallas",
+                "given": "Tad"
+            },
+            {
+                "family": "Gravel",
+                "given": "Dominique"
+            },
+            {
+                "family": "MacDonald",
+                "given": "Andrew"
+            },
+            {
+                "family": "Mercier",
+                "given": "Benjamin"
+            },
+            {
+                "family": "Violet",
+                "given": "Cl\u00e9ment"
+            },
+            {
+                "family": "Vissault",
+                "given": "Steve"
+            }
+        ],
+        "container-title": "Journal of Biogeography",
+        "id": "Poisot2021GloKno",
+        "issue": "7",
+        "issued": {
+            "date-parts": [
+                [
+                    2021
+                ]
+            ]
+        },
+        "page": "1552-1563",
+        "title": "Global knowledge gaps in species interaction networks data",
+        "type": "article-journal",
+        "volume": "48"
+    },
+    {
+        "DOI": "10.1016/j.biocon.2016.07.014",
+        "author": [
+            {
+                "family": "Proen\u00e7a",
+                "given": "V\u00e2nia"
+            },
+            {
+                "family": "Martin",
+                "given": "Laura Jane"
+            },
+            {
+                "family": "Pereira",
+                "given": "Henrique Miguel"
+            },
+            {
+                "family": "Fernandez",
+                "given": "Miguel"
+            },
+            {
+                "family": "McRae",
+                "given": "Louise"
+            },
+            {
+                "family": "Belnap",
+                "given": "Jayne"
+            },
+            {
+                "family": "B\u00f6hm",
+                "given": "Monika"
+            },
+            {
+                "family": "Brummitt",
+                "given": "Neil"
+            },
+            {
+                "family": "Garc\u00eda-Moreno",
+                "given": "Jaime"
+            },
+            {
+                "family": "Gregory",
+                "given": "Richard D."
+            },
+            {
+                "family": "Honrado",
+                "given": "Jo\u00e3o Pradinho"
+            },
+            {
+                "family": "J\u00fcrgens",
+                "given": "Norbert"
+            },
+            {
+                "family": "Opige",
+                "given": "Michael"
+            },
+            {
+                "family": "Schmeller",
+                "given": "Dirk S."
+            },
+            {
+                "family": "Tiago",
+                "given": "Patr\u00edcia"
+            },
+            {
+                "family": "Swaay",
+                "given": "Chris A. M.",
+                "non-dropping-particle": "van"
+            }
+        ],
+        "collection-title": "SI:Measures of biodiversity",
+        "container-title": "Biological Conservation",
+        "id": "Proenca2017GloBio",
+        "issued": {
+            "date-parts": [
+                [
+                    2017
+                ]
+            ]
+        },
+        "page": "256-263",
+        "title": "Global biodiversity monitoring: From data sources to Essential Biodiversity Variables",
+        "type": "article-journal",
+        "volume": "213"
+    },
+    {
+        "DOI": "10.1126/sciadv.aau4996",
+        "author": [
+            {
+                "family": "Runge",
+                "given": "Jakob"
+            },
+            {
+                "family": "Nowack",
+                "given": "Peer"
+            },
+            {
+                "family": "Kretschmer",
+                "given": "Marlene"
+            },
+            {
+                "family": "Flaxman",
+                "given": "Seth"
+            },
+            {
+                "family": "Sejdinovic",
+                "given": "Dino"
+            }
+        ],
+        "container-title": "Science Advances",
+        "id": "Runge2019DetQua",
+        "issue": "11",
+        "issued": {
+            "date-parts": [
+                [
+                    2019
+                ]
+            ]
+        },
+        "page": "eaau4996",
+        "title": "Detecting and quantifying causal associations in large nonlinear time series datasets",
+        "type": "article-journal",
+        "volume": "5"
+    },
+    {
+        "DOI": "10.1038/s41467-019-10105-3",
+        "author": [
+            {
+                "family": "Runge",
+                "given": "Jakob"
+            },
+            {
+                "family": "Bathiany",
+                "given": "Sebastian"
+            },
+            {
+                "family": "Bollt",
+                "given": "Erik"
+            },
+            {
+                "family": "Camps-Valls",
+                "given": "Gustau"
+            },
+            {
+                "family": "Coumou",
+                "given": "Dim"
+            },
+            {
+                "family": "Deyle",
+                "given": "Ethan"
+            },
+            {
+                "family": "Glymour",
+                "given": "Clark"
+            },
+            {
+                "family": "Kretschmer",
+                "given": "Marlene"
+            },
+            {
+                "family": "Mahecha",
+                "given": "Miguel D."
+            },
+            {
+                "family": "Mu\u00f1oz-Mar\u00ed",
+                "given": "Jordi"
+            },
+            {
+                "family": "Nes",
+                "given": "Egbert H.",
+                "non-dropping-particle": "van"
+            },
+            {
+                "family": "Peters",
+                "given": "Jonas"
+            },
+            {
+                "family": "Quax",
+                "given": "Rick"
+            },
+            {
+                "family": "Reichstein",
+                "given": "Markus"
+            },
+            {
+                "family": "Scheffer",
+                "given": "Marten"
+            },
+            {
+                "family": "Sch\u00f6lkopf",
+                "given": "Bernhard"
+            },
+            {
+                "family": "Spirtes",
+                "given": "Peter"
+            },
+            {
+                "family": "Sugihara",
+                "given": "George"
+            },
+            {
+                "family": "Sun",
+                "given": "Jie"
+            },
+            {
+                "family": "Zhang",
+                "given": "Kun"
+            },
+            {
+                "family": "Zscheischler",
+                "given": "Jakob"
+            }
+        ],
+        "container-title": "Nature Communications",
+        "id": "Runge2019InfCau",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    2019
+                ]
+            ]
+        },
+        "page": "2553",
+        "publisher": "Nature Publishing Group",
+        "title": "Inferring causation from time series in Earth system sciences",
+        "type": "article-journal",
+        "volume": "10"
+    },
+    {
+        "DOI": "10.1198/016214504000000250",
+        "author": [
+            {
+                "family": "Stevens",
+                "given": "Don L"
+            },
+            {
+                "family": "Olsen",
+                "given": "Anthony R"
+            }
+        ],
+        "container-title": "Journal of the American Statistical Association",
+        "id": "Stevens2004SpaBal",
+        "issue": "465",
+        "issued": {
+            "date-parts": [
+                [
+                    2004
+                ]
+            ]
+        },
+        "page": "262-278",
+        "title": "Spatially Balanced Sampling of Natural Resources",
+        "type": "article-journal",
+        "volume": "99"
+    },
+    {
+        "DOI": "10.1093/biosci/biab099",
+        "author": [
+            {
+                "family": "Urban",
+                "given": "Mark C"
+            },
+            {
+                "family": "Travis",
+                "given": "Justin M J"
+            },
+            {
+                "family": "Zurell",
+                "given": "Damaris"
+            },
+            {
+                "family": "Thompson",
+                "given": "Patrick L"
+            },
+            {
+                "family": "Synes",
+                "given": "Nicholas W"
+            },
+            {
+                "family": "Scarpa",
+                "given": "Alice"
+            },
+            {
+                "family": "Peres-Neto",
+                "given": "Pedro R"
+            },
+            {
+                "family": "Malchow",
+                "given": "Anne-Kathleen"
+            },
+            {
+                "family": "James",
+                "given": "Patrick M A"
+            },
+            {
+                "family": "Gravel",
+                "given": "Dominique"
+            },
+            {
+                "family": "De Meester",
+                "given": "Luc"
+            },
+            {
+                "family": "Brown",
+                "given": "Calum"
+            },
+            {
+                "family": "Bocedi",
+                "given": "Greta"
+            },
+            {
+                "family": "Albert",
+                "given": "C\u00e9cile H"
+            },
+            {
+                "family": "Gonzalez",
+                "given": "Andrew"
+            },
+            {
+                "family": "Hendry",
+                "given": "Andrew P"
+            }
+        ],
+        "container-title": "BioScience",
+        "id": "Urban2022CodLif",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    2022
+                ]
+            ]
+        },
+        "page": "91-104",
+        "title": "Coding for Life: Designing a Platform for Projecting and Protecting Global Biodiversity",
+        "type": "article-journal",
+        "volume": "72"
+    },
+    {
+        "DOI": "10.1111/2041-210X.13003",
+        "author": [
+            {
+                "family": "Dam-Bates",
+                "given": "Paul",
+                "non-dropping-particle": "van"
+            },
+            {
+                "family": "Gansell",
+                "given": "Oliver"
+            },
+            {
+                "family": "Robertson",
+                "given": "Blair"
+            }
+        ],
+        "container-title": "Methods in Ecology and Evolution",
+        "id": "vanDam-Bates2018UsiBal",
+        "issue": "7",
+        "issued": {
+            "date-parts": [
+                [
+                    2018
+                ]
+            ]
+        },
+        "page": "1718-1726",
+        "title": "Using balanced acceptance sampling as a master sample for environmental surveys",
+        "type": "article-journal",
+        "volume": "9"
+    },
+    {
+        "DOI": "10.1093/biosci/biy144",
+        "author": [
+            {
+                "family": "White",
+                "given": "Easton R"
+            }
+        ],
+        "container-title": "BioScience",
+        "id": "White2019MinTim",
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    2019
+                ]
+            ]
+        },
+        "page": "40-46",
+        "title": "Minimum Time Required to Detect Population Trends: The Need for Long-Term Monitoring Programs",
+        "type": "article-journal",
+        "volume": "69"
+    },
+    {
+        "DOI": "10.1016/j.cub.2021.05.066",
+        "author": [
+            {
+                "family": "Zhang",
+                "given": "Wenyuan"
+            },
+            {
+                "family": "Sheldon",
+                "given": "Ben C."
+            },
+            {
+                "family": "Grenyer",
+                "given": "Richard"
+            },
+            {
+                "family": "Gaston",
+                "given": "Kevin J."
+            }
+        ],
+        "container-title": "Current Biology",
+        "id": "Zhang2021HabCha",
+        "issue": "16",
+        "issued": {
+            "date-parts": [
+                [
+                    2021
+                ]
+            ]
+        },
+        "page": "3656-3662.e3",
+        "title": "Habitat change and biased sampling influence estimation of diversity trends",
+        "type": "article-journal",
+        "volume": "31"
     }
 ]
